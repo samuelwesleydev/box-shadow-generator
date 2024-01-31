@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- metas -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create shadows for your HTML elements dynamically, check out our shadow box generator.">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style-global.css">
+        <!-- Media queries -->
+    <link rel="stylesheet" href="assets/css/media-query.css">
+
+    <!-- CDN -->
+        <!-- Normalize css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+
+    
+    <title>box shadow generator </title>
+</head>
+<body>
+    <main class="father-container">
+        <section class="container-box-trap">
+            <div class="box-trap"></div>
+        </section>
+
+        <aside class="config-side">
+            <form class="form-config" action="#" method="post">
+                <section class="section__config-mode">
+
+                    <div>
+                        <label for="mode-light">Light</label>
+                        <input type="radio" name="radioMode" id="mode-light" checked>
+                    </div>
+                    <div>
+                        <label for="mode-exaggerated">Exaggerated</label>
+                        <input type="radio" name="radioMode" id="mode-exaggerated">
+                    </div>
+
+                    <div>
+                        <label for="check-inset">Inset</label>
+                        <input type="checkbox" name="check-inset" id="check-inset">
+                    </div>
+
+                    <div class=""><input type="color" name="buttonColor" id="buttonColor"></div>
+
+                </section>
+
+                <section class="section__config-range">
+                    <div>
+                        <label for="">Horizontal Length</label>
+                        <input type="range" name="rangeX" id="rangeX"  min="-100" max="100" value="10">
+                    </div>
+
+                    <div>
+                        <label for="">Vertical Length</label>
+                        <input type="range" name="rangeY" id="rangeY"  min="-100" max="100" value="10">
+                    </div>
+
+                    <div>
+                        <label for="">Blur</label>
+                        <input type="range" name="rangeBlur" id="rangeBlur" min="0" max="100" value="0">
+                    </div>
+
+                    <div>
+                        <label for="">Spread</label>
+                        <input type="range" name="rangeSpread" id="rangeSpread" min="-30" max="30" value="0">
+                    </div>
+
+                    <div>
+                        <label for="">Opacity</label>
+                        <input type="range" name="rangeOpacity" id="rangeOpacity" min="0" max="1" step="0.001" value="1">
+                    </div>
+
+                    <button class="button-reset style-button">Reset</button>
+                </section>
+
+                <section class="result">
+<pre class="text-for-copy">box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1) ;
+-webkit-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1) ;
+-moz-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1) ;
+</pre>
+                    <button class="button-copy-text style-button">Copy
+                        <span class="symbol-copy material-symbols-outlined">content_copy</span>
+                        <span class="symbol-correct material-symbols-outlined">check</span>
+                    </button>
+                </section>
+            </form>
+        </aside>
+    </main>
+    <footer class="footer">
+        <p>Created by <strong><a href="https://www.linkedin.com/in/samuel-wesley-03b9a7248/" target="_blank">Samuel Wesley</a></strong> from  <img width="15px" src="https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/svg/1f1e7-1f1f7.svg" alt=""></p>
+    </footer>
+
+    <script type="module" src="assets/scripts/main.js"></script>
+</body>
+</html>

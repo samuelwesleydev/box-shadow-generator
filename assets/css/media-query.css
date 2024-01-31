@@ -1,0 +1,44 @@
+@media screen and (max-width:891px){
+    .father-container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 500px;
+        height: 100%;
+    }
+    
+    .container-box-trap .box-trap{
+        width: 200px;
+        height: 200px;
+    }
+    .form-config .section__config-range{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(50px, 100%));
+    }
+    .section__config-range .button-reset{
+        height: 30px;
+    }
+    .text-for-copy{
+        max-width: 90%;
+        margin:auto;
+    }
+}
+@media screen and (max-width:425px){
+
+    .container-box-trap .box-trap{
+        width: 150px;
+        height: 150px;
+    }
+    .config-side{
+        overflow-y: scroll;
+        overflow-x: hidden;
+
+        height:400px;
+    }
+    .form-config .section__config-mode  {
+        gap: 8px;
+    }
+    .form-config .section__config-range{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+}

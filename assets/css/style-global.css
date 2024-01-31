@@ -1,0 +1,212 @@
+/* Reset e Root CSS */
+@import url(reset.css);
+@import url(root.css);
+
+/* Importando a fonte Roboto do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* Estilos Gerais */
+html{
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    background: var(--color-blue-very-light);
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.father-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    height: 100vh;
+    padding: 20px;
+    gap: 10px;
+
+}
+
+.father-container .container-box-trap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background: white;
+    overflow:hidden;
+}
+
+.container-box-trap .box-trap {
+    background: var(--color-blue-hard);
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.config-side {
+    background: var(--color-blue-low-light);
+    padding: 30px;
+    border-radius: 20px;
+
+}
+
+.config-side .form-config {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-config .section__config-mode {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+label {
+    cursor: pointer;
+    user-select: none;
+
+}
+
+.form-config .section__config-range {
+    display: grid;
+    gap: 15px;
+}
+
+.section__config-range div {
+    display: grid;
+    gap: 5px;
+}
+
+.section__config-range .button-reset {
+    margin: 0;
+}
+
+.style-button {
+    text-align: center;
+    padding: 5px;
+    width: 100px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    background: var(--color-blue-very-light);
+    transition: background, box-shadow 0.3s ease-in-out;
+}
+
+.style-button:hover {
+    box-shadow: 0px 0px 26px -9px rgba(0, 0, 0, 1);
+}
+
+input[type="range"] {
+    appearance: none;
+    width: 100%;
+    height: 18px;
+    padding: 11px;
+    background: var(--color-blue-light);
+    border-radius: 99999px;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    transition: box-shadow, opacity 0.2s;
+}
+
+input[type="range"]:hover {
+    opacity: 1;
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.182);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: var(--color-blue-hard);
+    width: 12px;
+    height: 17px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+    background-color: var(--color-blue-hard);
+    width: 12px;
+    height: 17px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.form-config .result {
+    display: grid;
+    margin: 20px 0;
+    gap: 15px;
+}
+.text-for-copy {
+    background-color: #1f2024;
+    color: #fff;
+
+    font-family: inherit;
+    font-size: 14px;
+    width: 100%;
+    max-height: 103px;
+    padding: 20px;
+    border-radius: 20px 20px 0px 0px;
+    overflow-x: scroll;
+    overflow-Y: hidden;
+
+    box-sizing: inherit;
+    
+
+}
+.text-for-copy::-webkit-scrollbar {
+    height: 6px; 
+    border-radius:20px;
+
+} 
+
+.text-for-copy::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+.text-for-copy::-webkit-scrollbar-thumb {
+    background-color: var(--color-blue-hard); 
+    border-radius: 6px; 
+}
+
+.button-copy-text{
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    user-select: none;
+
+}
+.material-symbols-outlined{
+    font-size: 15px;
+
+}
+.button-copy-text .symbol-correct{
+    display:none;
+    color: rgb(6, 196, 6);
+    font-weight: 700;
+
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 97%;
+    margin: 20px auto 0px auto;
+    background: var(--color-blue-low-light);
+    border-radius: 20px 20px 0px 0px;
+}
+.footer a{
+    color:var(--color-blue-hard);
+}
+.footer a:hover{
+    color:white;
+
+}
