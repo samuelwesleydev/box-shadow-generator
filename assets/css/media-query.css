@@ -1,26 +1,44 @@
-@media screen and (max-width:891px){
-    .father-container {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 500px;
-        height: 100%;
+@media  screen and (min-width:1800px) {
+
+    .father-container{
+        display: flex;
+        align-items:center;
+        justify-content:center;
+        max-width:1200px;
     }
+    .father-container .container-box-trap {
+        width:100%;
+        height: 620px;
+    }
+    .container-box-trap .box-trap{
+        width: 300px;
+        height: 300px;
+    }
+
     
+}
+@media screen and (max-width:892px){
+    .father-container{
+        display: flex;
+        flex-direction:column;
+    }
+    .father-container .container-box-trap {
+        height: 500px;
+        width:100%;
+    }
     .container-box-trap .box-trap{
         width: 200px;
         height: 200px;
     }
-    .form-config .section__config-range{
-        display: grid;
-        grid-template-columns: repeat(2, minmax(50px, 100%));
+    .father-container  .config-side{
+        width:100%;
+
+
     }
     .section__config-range .button-reset{
         height: 30px;
     }
-    .text-for-copy{
-        max-width: 90%;
-        margin:auto;
-    }
+
 }
 @media screen and (max-width:425px){
 
